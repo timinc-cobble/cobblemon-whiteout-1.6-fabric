@@ -2,7 +2,6 @@ package us.timinc.mc.cobblemon.whiteout
 
 import com.cobblemon.mod.common.api.events.CobblemonEvents
 import com.cobblemon.mod.common.api.events.battles.BattleFaintedEvent
-import com.cobblemon.mod.common.api.events.battles.BattleVictoryEvent
 import net.fabricmc.api.ModInitializer
 
 object Whiteout : ModInitializer {
