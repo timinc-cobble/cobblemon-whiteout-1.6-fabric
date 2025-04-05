@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(PlayerEntity.class)
+@Mixin(value = PlayerEntity.class, priority = 100000)
 public class WhiteoutPlayerMixin {
     @Inject(method = "isInvulnerableTo", at = @At("HEAD"), cancellable = true)
     public void TimIncMcWhiteout$isInvulnerableTo(DamageSource damageSource, CallbackInfoReturnable<Boolean> cir) {
