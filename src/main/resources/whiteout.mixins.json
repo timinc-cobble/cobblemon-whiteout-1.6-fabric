@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "us.timinc.mc.cobblemon.whiteout.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "WhiteoutPlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
