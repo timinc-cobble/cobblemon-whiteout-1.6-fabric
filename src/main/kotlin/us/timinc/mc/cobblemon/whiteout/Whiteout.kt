@@ -1,8 +1,10 @@
 package us.timinc.mc.cobblemon.whiteout
 
+import com.cobblemon.mod.common.Cobblemon
 import com.cobblemon.mod.common.api.battles.model.actor.ActorType
 import com.cobblemon.mod.common.api.events.CobblemonEvents
 import com.cobblemon.mod.common.api.events.battles.BattleFaintedEvent
+import com.cobblemon.mod.common.world.gamerules.CobblemonGameRules
 import net.fabricmc.api.ModInitializer
 
 object Whiteout : ModInitializer {
@@ -13,6 +15,9 @@ object Whiteout : ModInitializer {
     }
 
     private fun handleBattleFainted(battleFaintedEvent: BattleFaintedEvent) {
+        val server = Cobblemon.implementation.server()
+        val battleInvul = server!!.gameRules.get(CobblemonGameRules.BATTLE_INVULNERABILITY)
+        if (battleInvul.equals(true)) return
         val killed = battleFaintedEvent.killed
         val entity = killed.entity ?: return
         val owner = entity.owner ?: return
