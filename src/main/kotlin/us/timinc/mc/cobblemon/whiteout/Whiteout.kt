@@ -15,9 +15,12 @@ import us.timinc.mc.cobblemon.counter.config.ConfigBuilder
 import us.timinc.mc.cobblemon.whiteout.config.WhiteoutConfig
 
 object Whiteout : ModInitializer {
+    @Suppress("MemberVisibilityCanBePrivate")
     const val MOD_ID = "cobblemon-whiteout"
+    @Suppress("MemberVisibilityCanBePrivate")
     val config: WhiteoutConfig = ConfigBuilder.load(WhiteoutConfig::class.java, MOD_ID)
 
+    @Suppress("MemberVisibilityCanBePrivate")
     val POKEBATTLE_DAMAGE_SOURCE: ResourceKey<DamageType> = ResourceKey.create(
         Registries.DAMAGE_TYPE, ResourceLocation.fromNamespaceAndPath(MOD_ID, "pokebattle")
     )
