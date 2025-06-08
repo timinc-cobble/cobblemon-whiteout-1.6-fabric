@@ -4,7 +4,9 @@
   "version": "1.6-fabric-1.0.2",
   "name": "Cobblemon Whiteout",
   "description": "What if players whited out if their last Pokemon fainted?",
-  "authors": ["TimInc aka Timothy Metcalfe"],
+  "authors": [
+    "TimInc aka Timothy Metcalfe"
+  ],
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
