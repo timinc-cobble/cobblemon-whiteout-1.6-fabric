@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "cobblemon-whiteout",
-  "version": "1.6-fabric-1.0.2",
+  "version": "1.6-fabric-1.1.0",
   "name": "Cobblemon Whiteout",
   "description": "What if players whited out if their last Pokemon fainted?",
   "authors": [
