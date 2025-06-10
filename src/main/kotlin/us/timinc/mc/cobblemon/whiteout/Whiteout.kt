@@ -11,12 +11,13 @@ import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.damagesource.DamageType
-import us.timinc.mc.cobblemon.counter.config.ConfigBuilder
+import us.timinc.mc.cobblemon.whiteout.config.ConfigBuilder
 import us.timinc.mc.cobblemon.whiteout.config.WhiteoutConfig
 
 object Whiteout : ModInitializer {
     @Suppress("MemberVisibilityCanBePrivate")
     const val MOD_ID = "cobblemon-whiteout"
+
     @Suppress("MemberVisibilityCanBePrivate")
     val config: WhiteoutConfig = ConfigBuilder.load(WhiteoutConfig::class.java, MOD_ID)
 
