@@ -17,6 +17,7 @@ import us.timinc.mc.cobblemon.whiteout.config.WhiteoutConfig
 object Whiteout : ModInitializer {
     @Suppress("MemberVisibilityCanBePrivate")
     const val MOD_ID = "cobblemon-whiteout"
+
     @Suppress("MemberVisibilityCanBePrivate")
     val config: WhiteoutConfig = ConfigBuilder.load(WhiteoutConfig::class.java, MOD_ID)
 
